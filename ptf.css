@@ -410,7 +410,9 @@ git push origin master
         /* 🌹🌹🌹 Services 🌹 */
         #services {
         text-align: center;
-        padding: 40px 0;
+        align-items: center;
+        justify-content: center;
+        
         color: aqua;
     }
     #services h2 {
@@ -418,7 +420,9 @@ git push origin master
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 2.5rem;
-        margin-bottom: 40px;
+        margin-top: 50px; /* Adjust the value as needed */
+        margin-bottom: 50px;
+        text-align: center;
     }
     .services-container {
         display: flex;
@@ -453,29 +457,12 @@ git push origin master
         padding: 20px;
     }
     .card-body i {
-
-
-
-
-    }
-    .card-body p {
-
+        font-size: 50px;
+        color: aqua;
+        margin-bottom: 20px;
+        padding-top: 30px;
 
     }
-
-    
-    /* 🌹🌹footer🌹🌹 */
-
-    .footer-container {
-
-
-    };
-    }
-    .card-body p {
-        color: #fff;
-        padding: 15px;
-    }
-
     
     /* 🌹🌹footer🌹🌹 */
       footer {
