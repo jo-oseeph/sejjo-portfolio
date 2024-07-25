@@ -125,15 +125,23 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #1e1e1e;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0.5, 0.9), rgba(0, 0, 0, 0.8)), url('images/hero.jpeg') no-repeat center center/cover;
   }
   
   .container {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    max-width: 1000px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+   
   }
+  
+  
+
   
   .hero-pic img {
     width: 100%;
@@ -142,8 +150,9 @@ body {
   }
   
   .home-content {
-    max-width: 600px;
-    margin-left: 20px;
+    width: 80%;
+    margin-left: 40px;
+  
   }
   
   h5 {
@@ -196,7 +205,10 @@ body {
     }
   
     .home-content {
-      margin-left: 0;
+      margin-left: 10px;
+      width: 90%;
+      text-align: left;
+      padding-left: 10px;
     }
   }
   
