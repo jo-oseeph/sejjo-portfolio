@@ -403,11 +403,12 @@ body {
             margin-bottom: 8px;
             color: aqua;
         }
-           .work-card-content p {
+        .work-card-content p {
             font-size: 15px;
             color: #fff;
             
         }
+git push origin master
         /* 🌹🌹🌹 Services 🌹 */
         #services {
         text-align: center;
@@ -454,10 +455,23 @@ body {
         padding: 20px;
     }
     .card-body i {
-        font-size: 50px;
-        color: aqua;
-        margin-bottom: 20px;
-        padding-top: 30px;
+
+
+
+
+    }
+    .card-body p {
+
+
+    }
+
+    
+    /* 🌹🌹footer🌹🌹 */
+
+    .footer-container {
+
+
+    };
     }
     .card-body p {
         color: #fff;
