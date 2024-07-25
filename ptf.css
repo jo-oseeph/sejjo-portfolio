@@ -40,7 +40,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-top: 50px;
     
@@ -130,9 +130,9 @@ body {
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1000px;
   }
   
   .hero-pic img {
