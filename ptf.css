@@ -411,8 +411,7 @@ git push origin master
         #services {
         text-align: center;
         align-items: center;
-        justify-content: center;
-        
+        justify-content: center; 
         color: aqua;
     }
     #services h2 {
