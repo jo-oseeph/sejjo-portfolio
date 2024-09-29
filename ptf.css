@@ -17,7 +17,7 @@ body {
 }
 
 .hero {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,16 +40,16 @@ body {
     text-align: center;
     margin-bottom: 2rem;
 }
-h1 {
+.content h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
-h2 {
+.content h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     min-height: 1.5em;
 }
-p {
+.content p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }
@@ -60,8 +60,8 @@ p {
     justify-content: center;
 }
 .cta-button {
-    background-color: white;
-    color: #a855f7;
+    background-color: #61dafb;
+    color: #1a1a1a;
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 9999px;
@@ -69,7 +69,9 @@ p {
     transition: opacity 0.3s;
 }
 .cta-button:hover {
-    opacity: 0.9;
+    background-color: transparent;
+    border: 2px solid #61dafb;
+    color: #fff;
 }
 .download-button {
     background-color: transparent;
@@ -78,12 +80,12 @@ p {
     padding: 0.5rem 1rem;
     border-radius: 9999px;
     text-decoration: none;
-    border: 2px solid white;
+    border: 2px solid #61dafb;
     transition: background-color 0.3s, color 0.3s;
 }
 .download-button:hover {
-    background-color: white;
-    color: #a855f7;
+    background-color: #61dafb;
+    color: #1a1a1a;
 }
 .hero-profile-image {
     width: 250px;
@@ -125,113 +127,83 @@ p {
     h1 {
         font-size: 3rem;
     }
-    h2 {
-        font-size: 2rem;
+    .content h2 {
+        font-size: 2.5rem;
+        color: #61dafb;
     }
     .button-container {
         justify-content: flex-start;
     }
 }
-@media (max-width: 768px) {
-    .hero {
-       height: 80vh;
-       
-    }
-}
+
+
 
 /* ============================================ */
 /* =============== SKILLS SECTION =============== */
-.skill-container {
+.skills-section {
+    padding: 4rem 1rem;
+    background-color: #07020d;
+}
+.skills-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #07020d;
-    /* margin-top: 100px; */
 }
-.skill-container .skills-main {
-    color: #61dafb;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    width: 100%;
-    display: flex;
+.skills-container h2 {
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #61dafb;
 }
-
-.skills-section {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
-
-.skills-column {
-    flex: 1;
+.skill-card .skill-name {
+    color: #61dafb;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
-
-h2 {
-    color: aqua;
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-.technical-skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skill-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.html { background-color: #e34c26; }
-.css { background-color: #264de4; }
-.javascript { background-color: #f0db4f; color: #333; }
-.react { background-color: #61dafb; color: #333; }
-.bootstrap { background-color: #563d7c; }
-.photoshop { background-color: #31a8ff; }
-
-.professional-skills ul {
-    list-style-type: none;
-}
-
-.professional-skills li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-    color: #ccc;
-}
-
-.professional-skills li::before {
-    content: "•";
-    color: aqua;
-    position: absolute;
-    left: 0;
-}
-
-@media (min-width: 768px) {
-    .skills-section {
-        flex-direction: row;
-        justify-content: space-between;
+@media (min-width: 640px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-
-
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+.skill-card {
+    background-color: #1a1a1a;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.skill-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.skill-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    color: white;
+}
+.skill-name {
+    font-weight: bold;
+}
 /* 🌹end skills🌹 */
 
 /* services2 */
@@ -407,8 +379,8 @@ p {
             background-color: #07020d;
         }
         .pr-container .project-main {
-            color: #31a8ff;
-            font-size: 2rem;
+            color: #61dafb;
+            font-size: 2.5rem;
             margin-bottom: 20px;
             width: 100%;
             display: flex;
@@ -425,13 +397,14 @@ p {
             justify-items: center;
         }
         .project-card {
-            background-color: white;
-            border-radius: 8px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             width: 100%;
             max-width: 350px;
             height: 350px;
+            padding: 10px;
             position: relative;
             cursor: pointer;
         }
@@ -445,6 +418,7 @@ p {
             height: 100%;
             object-fit: cover;
             object-position: center;
+            border-radius: 10px;
         }
         .project-overlay {
             position: absolute;
@@ -543,7 +517,7 @@ p {
        
        
        .bio-text h2 {
-            color: aqua;
+            color: #61dafb;
             margin-bottom: 1rem;
         }
         .bio-text {
