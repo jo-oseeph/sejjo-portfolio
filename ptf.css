@@ -132,6 +132,12 @@ p {
         justify-content: flex-start;
     }
 }
+@media (max-width: 768px) {
+    .hero {
+       height: 80vh;
+       
+    }
+}
 
 /* ============================================ */
 /* =============== SKILLS SECTION =============== */
