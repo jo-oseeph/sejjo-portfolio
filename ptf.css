@@ -374,6 +374,21 @@ p {
     margin: 0 auto;
     background-color: #07020d;
 }
+.pr-container .project-main {
+    color: #61dafb;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.project-main h2 {
+    font-size: 2.5rem;
+}
 .project-grid {
     display: grid;
     grid-template-columns: 1fr;
