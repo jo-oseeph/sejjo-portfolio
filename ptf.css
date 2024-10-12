@@ -374,7 +374,7 @@ p {
 @media (max-width: 768px) {
     .footer-row {
         justify-content: flex-start; /* Align items to the left on small screens */
-        padding-left: 20px; /* Add space on the left */
+        padding-left: 10px; /* Add space on the left */
     }
     
     .footer-column {
