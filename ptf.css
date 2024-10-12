@@ -406,7 +406,8 @@ p {
     }
 
     .contact-info p {
-        margin: 0; /* Remove any default margin */
+        margin-left: 0; /* Remove any default margin */
+        
     }
 }
 /* added css */
